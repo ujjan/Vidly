@@ -203,37 +203,41 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807101613511_InitialModel.cs" />
-    <Compile Include="Migrations\201807101613511_InitialModel.Designer.cs">
-      <DependentUpon>201807101613511_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\201807112221061_InitiolModel.cs" />
+    <Compile Include="Migrations\201807112221061_InitiolModel.Designer.cs">
+      <DependentUpon>201807112221061_InitiolModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807101632231_AddIsSubscribedToCustomer.cs" />
-    <Compile Include="Migrations\201807101632231_AddIsSubscribedToCustomer.Designer.cs">
-      <DependentUpon>201807101632231_AddIsSubscribedToCustomer.cs</DependentUpon>
+    <Compile Include="Migrations\201807112253197_AddIsSubscribedToNewsLater.cs" />
+    <Compile Include="Migrations\201807112253197_AddIsSubscribedToNewsLater.Designer.cs">
+      <DependentUpon>201807112253197_AddIsSubscribedToNewsLater.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807101757592_AddMembershipType.cs" />
-    <Compile Include="Migrations\201807101757592_AddMembershipType.Designer.cs">
-      <DependentUpon>201807101757592_AddMembershipType.cs</DependentUpon>
+    <Compile Include="Migrations\201807112259577_AddMembershipType.cs" />
+    <Compile Include="Migrations\201807112259577_AddMembershipType.Designer.cs">
+      <DependentUpon>201807112259577_AddMembershipType.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807101903211_populateMembershipTypes.cs" />
-    <Compile Include="Migrations\201807101903211_populateMembershipTypes.Designer.cs">
-      <DependentUpon>201807101903211_populateMembershipTypes.cs</DependentUpon>
+    <Compile Include="Migrations\201807112303000_PopulateMembeshipTyps.cs" />
+    <Compile Include="Migrations\201807112303000_PopulateMembeshipTyps.Designer.cs">
+      <DependentUpon>201807112303000_PopulateMembeshipTyps.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807101941471_ApplyAnnotationToCustomerName.cs" />
-    <Compile Include="Migrations\201807101941471_ApplyAnnotationToCustomerName.Designer.cs">
-      <DependentUpon>201807101941471_ApplyAnnotationToCustomerName.cs</DependentUpon>
+    <Compile Include="Migrations\201807112324041_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201807112324041_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201807112324041_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807102024136_MembershipTypePropertyNameChange.cs" />
-    <Compile Include="Migrations\201807102024136_MembershipTypePropertyNameChange.Designer.cs">
-      <DependentUpon>201807102024136_MembershipTypePropertyNameChange.cs</DependentUpon>
+    <Compile Include="Migrations\201807112334473_ChangeFeildNAmeInCustomerModel.cs" />
+    <Compile Include="Migrations\201807112334473_ChangeFeildNAmeInCustomerModel.Designer.cs">
+      <DependentUpon>201807112334473_ChangeFeildNAmeInCustomerModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807102107389_ChangingIdToIntOfMemberShipType.cs" />
-    <Compile Include="Migrations\201807102107389_ChangingIdToIntOfMemberShipType.Designer.cs">
-      <DependentUpon>201807102107389_ChangingIdToIntOfMemberShipType.cs</DependentUpon>
+    <Compile Include="Migrations\201807112337278_AddMembershipType1.cs" />
+    <Compile Include="Migrations\201807112337278_AddMembershipType1.Designer.cs">
+      <DependentUpon>201807112337278_AddMembershipType1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807102111298_ChangingMembershipIdAsItWasBefore.cs" />
-    <Compile Include="Migrations\201807102111298_ChangingMembershipIdAsItWasBefore.Designer.cs">
-      <DependentUpon>201807102111298_ChangingMembershipIdAsItWasBefore.cs</DependentUpon>
+    <Compile Include="Migrations\201807112348337_PopulateMembeshipTyps1.cs" />
+    <Compile Include="Migrations\201807112348337_PopulateMembeshipTyps1.Designer.cs">
+      <DependentUpon>201807112348337_PopulateMembeshipTyps1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807112354023_PopulateCustomers.cs" />
+    <Compile Include="Migrations\201807112354023_PopulateCustomers.Designer.cs">
+      <DependentUpon>201807112354023_PopulateCustomers.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -247,6 +251,10 @@
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-Vidly-20180710082929.mdf" />
+    <Content Include="App_Data\aspnet-Vidly-20180710082929_log.ldf">
+      <DependentUpon>aspnet-Vidly-20180710082929.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -261,6 +269,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Properties\webjobs-list.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -312,9 +321,7 @@
     <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -329,29 +336,32 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807101613511_InitialModel.resx">
-      <DependentUpon>201807101613511_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807112221061_InitiolModel.resx">
+      <DependentUpon>201807112221061_InitiolModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807101632231_AddIsSubscribedToCustomer.resx">
-      <DependentUpon>201807101632231_AddIsSubscribedToCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807112253197_AddIsSubscribedToNewsLater.resx">
+      <DependentUpon>201807112253197_AddIsSubscribedToNewsLater.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807101757592_AddMembershipType.resx">
-      <DependentUpon>201807101757592_AddMembershipType.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807112259577_AddMembershipType.resx">
+      <DependentUpon>201807112259577_AddMembershipType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807101903211_populateMembershipTypes.resx">
-      <DependentUpon>201807101903211_populateMembershipTypes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807112303000_PopulateMembeshipTyps.resx">
+      <DependentUpon>201807112303000_PopulateMembeshipTyps.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807101941471_ApplyAnnotationToCustomerName.resx">
-      <DependentUpon>201807101941471_ApplyAnnotationToCustomerName.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807112324041_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>201807112324041_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807102024136_MembershipTypePropertyNameChange.resx">
-      <DependentUpon>201807102024136_MembershipTypePropertyNameChange.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807112334473_ChangeFeildNAmeInCustomerModel.resx">
+      <DependentUpon>201807112334473_ChangeFeildNAmeInCustomerModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807102107389_ChangingIdToIntOfMemberShipType.resx">
-      <DependentUpon>201807102107389_ChangingIdToIntOfMemberShipType.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807112337278_AddMembershipType1.resx">
+      <DependentUpon>201807112337278_AddMembershipType1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807102111298_ChangingMembershipIdAsItWasBefore.resx">
-      <DependentUpon>201807102111298_ChangingMembershipIdAsItWasBefore.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807112348337_PopulateMembeshipTyps1.resx">
+      <DependentUpon>201807112348337_PopulateMembeshipTyps1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807112354023_PopulateCustomers.resx">
+      <DependentUpon>201807112354023_PopulateCustomers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -388,7 +398,9 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebJobs.Publish.2.0.0\build\Microsoft.Web.WebJobs.Publish.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebJobs.Publish.2.0.0\build\Microsoft.Web.WebJobs.Publish.targets'))" />
   </Target>
+  <Import Project="..\packages\Microsoft.Web.WebJobs.Publish.2.0.0\build\Microsoft.Web.WebJobs.Publish.targets" Condition="Exists('..\packages\Microsoft.Web.WebJobs.Publish.2.0.0\build\Microsoft.Web.WebJobs.Publish.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
